@@ -1,169 +1,209 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Discover Universe</title>
+    <title>Charles Coste</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
-    <link rel="icon" type="image/png" href="assets/global/icone.png">
-    
-
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="shortcut icon" href="assets/other/iu.ico" type="image/x-icon">
 </head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
-<body class="w3-light-grey">
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="assets/other/photoCV.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>PORTFOLIO</b></h4>
+    <p class="w3-text-grey">By Charles Coste</p>
+    
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <a class="fa fa-instagram w3-hover-opacity" style="text-decoration: none" href="https://www.instagram.com/chrles_cst/"></a>
+    <a class="fa fa-twitter w3-hover-opacity" style="text-decoration: none" href="https://twitter.com/CharlesCoste1"></a>
+    <a class="fa fa-linkedin w3-hover-opacity" style="text-decoration: none" href="https://www.linkedin.com/in/charles-coste/"></a>
+  </div>
+</nav>
 
-<!-- Navigation Bar -->
-<div class="w3-bar w3-white w3-border-bottom w3-xlarge">
-  <a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>Discover Universe</b></a>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>My Portfolio</b></h1>
+
 </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="assets/project/projetMyLs.jpg" alt="My_ls" style="width:100%" >
+      <div class="w3-container w3-white">
+        <p><b>My_ls</b></p>
+        <p>Objective was to recreate the ls function of Linux with the C language. We also had to add some options inside.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="https://alphasierra-jpg.github.io/FidelClicker/"><img src="assets/project/projetClicker.jpg" alt="My clcker Game" style="width:100%"></a>
+      <div class="w3-container w3-white">
+        <p><b>My Clicker Game</b></p>
+        <p>Clicker made entirely in JavaScript, with a free theme. Local backup implementations.<br><b><a href="https://alphasierra-jpg.github.io/FidelClicker/" style="text-decoration: none">Click on me to try!!</a></b><br></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="assets/project/projetLibertyCommerce.jpg" alt="Liberty Commerce" style="width:100%" >
+      <div class="w3-container w3-white">
+        <p><b>Liberty Commerce</b></p>
+        <p>Free project to create an e-commerce website with the Laravel Framework Laravel, AJAX implementation, self-hosted server</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="assets/project/projetFindEat.jpg" alt="Rest API and App" style="width:100%" >
+      <div class="w3-container w3-white">
+        <p><b>IOS App and REST API</b></p>
+        <p>We had to create an IOS application that would communicate with a REST API. In the specifications we had to create also the API</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="assets/project/projetProjetEtna.jpg" alt="Defi ETNA n°1" style="width:100%" >
+      <div class="w3-container w3-white">
+        <p><b>Hackaton Défi ETNA N°1</b></p>
+        <p>Creation of a trombinoscope for ETNA with the Node Express and React static framework for ETNA's HR department with rights management.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="assets/project/projetEtna2-Fini.jpg" alt="Defi ETNA n°2" style="width:100%">
+      <div class="w3-container w3-white">
+        <p><b>Hackaton Défi ETNA N°2</b></p>
+        <p>In this project, the goal was to create an application for the school using Node JS and Swift<br><br></p>
+      </div>
+    </div>
+  </div>
 
-<!-- Header -->
-<header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
-  <img class="w3-image" src="assets/global/main.jpg" alt="London" width="1500" height="700">
-  <div class="w3-display-middle" style="width:65%">
-    <div class="w3-bar w3-black">
-      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Tips');"><i class="fa fa-language w3-margin-right"></i>Common phrases to use</button>
-      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Money');"><i class="fa fa-money w3-margin-right"></i>Budget</button>
-      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Info');"><i class="fa fa-info w3-margin-right"></i>Info</button>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    
+    
+    <h4>Technical Skills</h4>
+    <!-- Progress bars / SkiTu pensais pas ce que ça pour les collégiens mais je pense qu'après toi tu veux taperlls -->
+    <p>Docker</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
+    </div>
+    <p>Javascript</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:75%">75%</div>
+    </div>
+    <p>C</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
     </div>
 
-    <!-- Tabs -->
-    <div id="Tips" class="w3-container w3-white w3-padding-16 myLink">
-      <h3>Phrases to use</h3>
-      <ul>
-        <li>How can I buy a ticket?</li>
-        <li>Where can I take the bus?</li>
-        <li>Do you know a good restaurant?</li>
-        <li>I am looking for a place can you tell me where it is?</li>
-        <li>I am allergic to some foods </li>
-        <li>Croyez-vous au paranormal?</li>
+    <hr>
+  
+    <h4>My passions</h4>
+
+  <!-- Images of Me -->
+  <div class="w3-row-padding w3-padding-16" id="about">
+    <div class="w3-col m6">
+      <h4>Karting</h4>
+      <img src="assets/other/photo1.jpg" alt="Me in karting" style="width:100%">
+    </div>
+    <div class="w3-col m6">
+      <h4>Photography</h4>
+      <img src="assets/other/photo2.jpg" alt="Me" style="width:100%">
+    </div>
+  </div>
+
+  
+    
+    <hr>
+    
+    
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>coste_c@etna-alternance.net</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>villecresnes 94, France</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>0650784114</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>About Me</h3>
+      <p>Hello, I'm a student at ETNA in 1st year looking for a work-study as a Devops or FullStack web developer. Learning new languages doesn't scare me, and I'm open to any learning.</p>
+
+    </div>
+  
+    <div class="w3-third">
+      <h3>Important</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <span class="w3-large">My CV</span><br>
+          <a href="assets/other/Charles_COSTE_CV.pdf" download="Charles_COSTE_CV.png">Download</a>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large">My GitHub</span><br>
+          <a href="https://github.com/AlphaSierra-jpg">Click on me</a>
+        </li> 
       </ul>
     </div>
 
-    <div id="Money" class="w3-container w3-white w3-padding-16 myLink">
-      <h3>How many money?</h3>
-      <p>Un budget journalier recommandé (incluant le transport, les visites, les souvenirs...)</p>
+    <div class="w3-third">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">C</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">SQL</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">CSS</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Python</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">React JS</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">HTML</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Web</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Laravel</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">NodeJS</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">JavaScript</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">API Rest</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Docker</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Unix</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">AJAX</span>
+      </p>
     </div>
 
-    <div id="Info" class="w3-container w3-white w3-padding-16 myLink">
-      <h3>Information</h3>
-      <p>une introduction et une section historique (sujet de votre voyage et lieu)</p>
-    </div>
   </div>
-</header>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:1100px;">
-
-  <!-- Good offers -->
-  <div class="w3-container w3-margin-top">
-    <h3>Some Examples</h3>
-  </div>
-  <div class="w3-row-padding w3-text-white w3-large"></div>
-    <img class="mySlides" src="assets/stuff/house_1.jpeg" style="width:100%">
-    <img class="mySlides" src="assets/stuff/house_2.jpeg" style="width:100%">
-    <img class="mySlides" src="assets/stuff/village_3.jpeg" style="width:100%">
-    <img class="mySlides" src="assets/stuff/house_2_2.jpeg" style="width:100%">
-
-    <button class="w3-button w3-black w3-left" style="width:50%" onclick="plusDivs(-1)">&#10094;</button>
-    <button class="w3-button w3-black w3-right" style="width:50%" onclick="plusDivs(1)">&#10095;</button>
-  </div>
-
-  <!-- Explore Nature -->
-  <div class="w3-container">
-    <h3>Explore the mythical places of Conjuring</h3>
-    <p>Travel with us and discover the places of all th moovies.</p>
-  </div>
-  <div class="w3-row-padding">
-    <div class="w3-half w3-margin-bottom">
-      <img src="assets/stuff/house_1.jpeg" alt="Norway" style="width:100%">
-      <div class="w3-container w3-white">
-        <h3>House Conjuring 1, USA</h3>
-        <p class="w3-opacity">Adress: 1677 Round Top Rd Burrillville, RI 02830<br></p>
-        
-        <p>This house is very important in the history of Conjuring. Indeed, it is the house of the first movie, it is necessary to know that the house on the left was built for the movie then destroyed. On the other hand the house from which the story is drawn exists. It is located at the address indicated. This movie has marked the history of horror movies with $320,000,000 generated worldwide. 
-          <br><br><b><a href="https://fr.hotels.com/ho1205781952/refuge-romantique-unique-une-toile-vivante-chaque-retraite-faite-a-la-main-chepachet-etats-unis-d-amerique/?chkin=2022-03-30&chkout=2022-03-31&x_pwa=1&rfrr=HSR&pwa_ts=1647420490079&referrerUrl=aHR0cHM6Ly9mci5ob3RlbHMuY29tL0hvdGVsLVNlYXJjaA%3D%3D&useRewards=false&rm1=a2&destination=1677+Round+Top+Rd%2C+Burrillville%2C+RI+02830%2C+États-Unis&destType=ADDRESS&sort=RECOMMENDED&top_dp=398&top_cur=EUR&semdtl=&userIntent=&selectedRoomType=37649436&selectedRatePlan=00046a4c80968d4046d8aafb1fd80d042535&expediaPropertyId=37649436">Click for the Hotel</a>
-          <br>Burrillville's SteakHouse</b></p>
-      </div>
-    </div>
-    <div class="w3-half w3-margin-bottom">
-        <img src="assets/stuff/house_2.jpeg" alt="Norway" style="width:100%">
-        <div class="w3-container w3-white">
-            <h3>House Conjuring 2, Royaume-Uni</h3>
-            <p class="w3-opacity">Adress Film: 33 Graeme Rd, Enfield EN1 3UU<br>Adress Real: 284 Green St, Enfield, Greater London EN3, UK</p>
-            <p>In this place the story of Conjuring 2 takes place. As in the first movie the house in the real story and the movie are not the same; the 2 addresses are indicated above. This house is related to the story of the Enfield case, a well-known case in the paranormal world.
-            <br><br><b><a href="https://fr.hotels.com/ho1211804864/six-bells-hotels-enfield-royaume-uni/?chkin=2022-03-30&chkout=2022-03-31&x_pwa=1&rfrr=HSR&pwa_ts=1647422991488&referrerUrl=aHR0cHM6Ly9mci5ob3RlbHMuY29tL0hvdGVsLVNlYXJjaA%3D%3D&useRewards=false&rm1=a2&regionId=177893&destination=Enfield%2C+Angleterre%2C+Royaume-Uni&destType=MARKET&neighborhoodId=553248635976382880&sort=RECOMMENDED&top_dp=108&top_cur=EUR&semdtl=&userIntent=&selectedRoomType=216945532&selectedRatePlan=266200900&expediaPropertyId=37837652">Click for the Hotel</a>
-            <br>Enfield's Fish and Chips</b></p>
-        </div>
-    </div>
-    <div class="w3-half w3-margin-bottom">
-        <img src="assets/stuff/village_3.jpeg" alt="Norway" style="width:100%">
-        <div class="w3-container w3-white">
-            <h3>Village Conjuring 3, USA</h3>
-            <p class="w3-opacity">Adress: 33°19'40.67N 84°30'34.99<br></p>
-            <p>This is a little more complicated for the third part of the saga because the story does not take place in a village and not in a house. So for this place we propose you the mill in which the end of the movie takes place. We indicate you above the GPS coordinates of the mill
-            <br> <br> <b> <a href="https://fr.hotels.com/ho50604832/country-inn-suites-by-radisson-newnan-ga-newnan-etats-unis-d-amerique/?chkin=2022-03-30&chkout=2022-03-31&x_pwa=1&rfrr=HSR&pwa_ts=1647427590821&referrerUrl=aHR0cHM6Ly9mci5ob3RlbHMuY29tL0hvdGVsLVNlYXJjaA%3D%3D&useRewards=false&rm1=a2&regionId=7995&destination=Peachtree+City%2C+Géorgie%2C+États-Unis+d%27Amérique&destType=MARKET&sort=RECOMMENDED&top_dp=132&top_cur=EUR&semdtl=&userIntent=&selectedRoomType=201483037&selectedRatePlan=234241867&expediaPropertyId=1550151">Click for the Hotel</a>
-            <br> 
-            Peachtree's SteakHouse</b></p>
-        </div>
-    </div>
-    <div class="w3-half w3-margin-bottom">
-      <img src="assets/stuff/house_4.jpg" alt="Austria" style="width:100%">
-      <div class="w3-container w3-white">
-        <h3>For the next film</h3>
-        <p class="w3-opacity">???<br></p>
-        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p><br><br>
-        
-      </div>
-    </div>
-  </div>
-
-  <!-- Newsletter -->
-  <div class="w3-container">
-    <div class="w3-panel w3-padding-16 w3-black w3-card">
-      <h2>Continue to stay informed</h2>
-      <p>Join our newsletter.</p>
-      <label>E-mail</label>
-      <input class="w3-input w3-border" type="text" placeholder="Your Email address">
-      <a href="https://www.youtube.com/watch?v=O91DT1pR1ew"><button type="button" class="w3-button w3-red w3-margin-top">Subscribe</button></a> 
-    </div>
-  </div>
+  </footer>
   
-  <!-- Contact -->
-  <div class="w3-container">
-    <h2>Contact us</h2>
-    <p>Let us book your next trip!</p>
-    <i class="fa fa-map-marker" style="width:30px"></i> Ivry-sur-Seine, FR<br>
-    <i class="fa fa-phone" style="width:30px"></i> Phone: +33 178453749<br>
-    <i class="fa fa-envelope" style="width:30px"> </i> Email: contact@discover-universe.fr<br>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <a href="https://www.youtube.com/watch?v=O91DT1pR1ew"><button class="w3-button w3-black w3-padding-large" type="button" >SEND MESSAGE</button></a>
-    </form>
-  </div>
-  
+  <div class="w3-black w3-center w3-padding-24">Powered by GitHub.com</a></div>
+
 <!-- End page content -->
 </div>
-
-<!-- Footer -->
-<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
-  <h5>Find Us On</h5>
-  <div class="w3-xlarge w3-padding-16">
-    <a href="https://www.youtube.com/watch?v=O91DT1pR1ew"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="https://www.youtube.com/watch?v=O91DT1pR1ew"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href="https://www.youtube.com/watch?v=O91DT1pR1ew"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
-    <a href="https://www.youtube.com/watch?v=O91DT1pR1ew"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
-    <a href="https://www.youtube.com/watch?v=O91DT1pR1ew"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-    <a href="https://www.youtube.com/watch?v=O91DT1pR1ew"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  </div>
-  <p>Powered by GitHub</a></p>
-</footer>
 
 <script type="text/javascript" src="script.js"></script>
 
