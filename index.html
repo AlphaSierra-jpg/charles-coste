@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     <link rel="shortcut icon" href="assets/other/iu.ico" type="image/x-icon">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
@@ -97,6 +99,26 @@
       <div class="w3-container w3-white">
         <p><b>Hackaton Défi ETNA N°2</b></p>
         <p>In this project, the goal was to create an application for the school using Node JS and Swift<br><br></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Third Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div class="w3-display-container">
+        <button class="w3-button w3-circle w3-display-left w3-black" onclick="MinitelSlide.previous()"><</button>
+        <button class="w3-button w3-circle w3-display-right w3-black" onclick="MinitelSlide.next()">></button>
+
+        <img id="Minitel" src="assets/project/minitel/1-Menu.jpg" alt="Rest API and App" style="width:100%" >
+        <img id="Minitel" src="assets/project/minitel/4-Ip.jpg" alt="Rest API and App" style="width:100%" >
+        <img id="Minitel" src="assets/project/minitel/2-GeneralInfo.jpg" alt="Rest API and App" style="width:100%" >
+        <img id="Minitel" src="assets/project/minitel/3-Process.jpg" alt="Rest API and App" style="width:100%">
+      </div>
+      
+      <div class="w3-container w3-white">
+        <p><b>Minitel 3.1</b></p>
+        <p>In this project we had to create a CLI interface to retrieve information from an OS</p>
       </div>
     </div>
   </div>
@@ -205,7 +227,10 @@
 <!-- End page content -->
 </div>
 
-<script type="text/javascript" src="script.js"></script>
+<script>
+MinitelSlide = w3.slideshow("#Minitel", 0);
+</script>
+
 
 </body>
 </html>
